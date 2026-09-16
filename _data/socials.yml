@@ -5,7 +5,7 @@
 # Active icons: shown as the profile icon row on the about page (email, CV, Google Scholar, LinkedIn), in this order.
 email: jiwonk7@illinois.edu # your email address
 cv_pdf: /assets/pdf/JiwonKim_CV.pdf # path to your CV PDF file — swap in your real CV and update this path
-scholar_userid: your-google-scholar-id # TODO: replace with your Google Scholar user ID (from the "user=" param in your profile URL)
+scholar_userid: yP4JYWEAAAAJ # TODO: replace with your Google Scholar user ID (from the "user=" param in your profile URL)
 linkedin_username: jenny-jiwon-kim # TODO: replace with your LinkedIn username (from linkedin.com/in/<username>)
 
 # Disabled: not part of the requested icon set (kept, not deleted, in case you want them back later)
