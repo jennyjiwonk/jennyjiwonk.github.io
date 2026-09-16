@@ -12,6 +12,8 @@
  * Change 4: swapped which icon shows in the light/dark toggle — it now shows
  *           the icon for the mode you'd switch TO (moon while in light mode,
  *           sun while in dark mode) instead of the current mode.
+ * Change 5: colored `.periodical` (the "<venue>, <year>" line on each
+ *           publication entry) with the theme's accent color.
  * See docs/ARCHITECTURE.md#local-overrides-your-site-vs-this-repo. Run
  * `bundle exec al-folio upgrade overrides diff _sass/_themes.scss` after
  * upgrading al_folio_core to check for upstream drift.
@@ -256,4 +258,13 @@ html[data-theme-setting="light"] {
  ******************************************************************************/
 .navbar-brand.title {
   letter-spacing: -0.02em;
+}
+
+/******************************************************************************
+ * Publication venue/date line (added)
+ * Colors the "<venue>, <year>" line (e.g. "EMNLP, 2026") in each publication
+ * entry with the theme's navy blue accent color.
+ ******************************************************************************/
+.periodical {
+  color: var(--global-theme-color);
 }
