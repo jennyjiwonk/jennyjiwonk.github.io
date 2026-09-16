@@ -27,9 +27,13 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hi, I am a Computer Science Ph.D. student at University of Illinois Urbana-Champaign, advised by [Prof. Koustuv Saha](https://koustuv.com/). My research sits at the intersection of natural language processing (NLP) and human-computer interaction (HCI), focusing on AI for mental health counseling and therapy. 
+Hi, I am a Computer Science Ph.D. student at University of Illinois Urbana-Champaign, advised by [Prof. Koustuv Saha](https://koustuv.com/). 
 
-I develop methods that bring expert therapeutic knowledge and real-world human experience into language models. I also study how people perceive and engage with AI in mental health contexts.
+My research focuses on AI for mental health counseling and therapy, aiming to build language models that support people by combining methods from natural language processing (NLP) and human-computer interaction (HCI). Specific topics include:
+
+* Aligning language models with expert therapeutic knowledge and real-world human experience
+* Evaluating and improving the safety of AI in mental health conversations
+* Understanding how people perceive and engage with AI in mental health contexts
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
