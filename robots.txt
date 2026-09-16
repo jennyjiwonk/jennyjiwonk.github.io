@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://jennyjiwonkim.github.io/sitemap.xml
+Sitemap: https://jennyjiwonk.github.io/sitemap.xml
