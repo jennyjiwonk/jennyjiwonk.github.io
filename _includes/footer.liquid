@@ -1,0 +1,45 @@
+{% comment %}
+  LOCAL OVERRIDE of al_folio_core's _includes/footer.liquid.
+  Change: the "© Copyright ... " footer bar is removed entirely (not just its
+  text — an empty <footer> would still render as a black bar via
+  footer.fixed-bottom's background-color in _sass/_footer.scss). Original
+  markup is commented out below, not deleted. See
+  docs/ARCHITECTURE.md#local-overrides-your-site-vs-this-repo. Run
+  `bundle exec al-folio upgrade overrides diff _includes/footer.liquid` after
+  upgrading al_folio_core to check for upstream drift.
+
+  {% capture footer_contents %}
+    &copy; Copyright {{ site.time | date: '%Y' }}
+    {{ site.first_name }}
+    {{ site.middle_name }}
+    {{ site.last_name }}. {{ site.footer_text }}
+    {% if site.impressum_path %}
+      <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
+    {% endif %}
+    {% if site.last_updated %}
+      Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+    {% endif %}
+  {% endcapture %}
+
+  {% if site.footer_fixed %}
+    <footer class="fixed-bottom" role="contentinfo">
+      <div class="container mt-0">
+        {{ footer_contents }}
+      </div>
+    </footer>
+  {% else %}
+    <footer class="sticky-bottom mt-5" role="contentinfo">
+      {% if site.newsletter.enabled %}
+        {% if site.plugins contains 'al_newsletter' %}
+          {% include plugins/al_newsletter_form_center.liquid %}
+        {% else %}
+          {% include newsletter.liquid %}
+        {% endif %}
+      {% endif %}
+
+      <div class="container">
+        {{ footer_contents }}
+      </div>
+    </footer>
+  {% endif %}
+{% endcomment %}

@@ -9,6 +9,9 @@
  *           LinkedIn icon row on the about page (see _layouts/about.liquid).
  * Change 3: added tighter letter-spacing for `.navbar-brand.title` (the site
  *           name in the top bar).
+ * Change 4: swapped which icon shows in the light/dark toggle — it now shows
+ *           the icon for the mode you'd switch TO (moon while in light mode,
+ *           sun while in dark mode) instead of the current mode.
  * See docs/ARCHITECTURE.md#local-overrides-your-site-vs-this-repo. Run
  * `bundle exec al-folio upgrade overrides diff _sass/_themes.scss` after
  * upgrading al_folio_core to check for upstream drift.
@@ -142,12 +145,14 @@ html[data-theme-setting="dark"] {
     display: none;
   }
 
+  // #light-toggle-dark { display: inline-block; } // commented out: icon now shows the mode you'd switch TO, not the current one
   #light-toggle-dark {
-    display: inline-block;
+    display: none;
   }
 
+  // #light-toggle-light { display: none; } // commented out: sun icon shown while in dark mode, as the switch-to-light affordance
   #light-toggle-light {
-    display: none;
+    display: inline-block;
   }
 
   #back-to-top {
@@ -161,12 +166,14 @@ html[data-theme-setting="light"] {
     display: none;
   }
 
+  // #light-toggle-dark { display: none; } // commented out: moon icon shown while in light mode, as the switch-to-dark affordance
   #light-toggle-dark {
-    display: none;
+    display: inline-block;
   }
 
+  // #light-toggle-light { display: inline-block; } // commented out: icon now shows the mode you'd switch TO, not the current one
   #light-toggle-light {
-    display: inline-block;
+    display: none;
   }
 }
 

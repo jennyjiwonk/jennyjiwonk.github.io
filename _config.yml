@@ -94,7 +94,8 @@ al_folio:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+# footer_fixed: true # commented out: footer is removed entirely (see _includes/footer.liquid); this was also reserving 70px of empty bottom padding for it
+footer_fixed: false
 # search_enabled: true # commented out: search button removed from the top bar
 search_enabled: false
 socials_in_search: true
