@@ -8,13 +8,13 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  # more_info: > # commented out: address lines replaced by the social icon row (email/CV/Scholar/LinkedIn) below the photo
+  #   <p>555 your office number</p>
+  #   <p>123 your address street</p>
+  #   <p>Your City, State 12345</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: true # includes social icons right below the profile photo (email, CV, Google Scholar, LinkedIn — configured in _data/socials.yml)
 
 announcements:
   enabled: true # includes a list of news items

@@ -2,8 +2,8 @@
 layout: default
 permalink: /blog/
 title: blog
-nav: true
-nav_order: 1
+# nav: true # commented out: navbar trimmed to About + Publications only
+# nav_order: 1
 pagination:
   enabled: true
   collection: posts
