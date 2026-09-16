@@ -29,7 +29,7 @@ latest_posts:
 
 Hi, I am a Computer Science Ph.D. student at University of Illinois Urbana-Champaign, advised by [Prof. Koustuv Saha](https://koustuv.com/). 
 
-My research focuses on AI for mental health counseling and therapy, aiming to build language models that support people by combining methods from natural language processing (NLP) and human-computer interaction (HCI). 
+My research focuses on AI for mental health and wellbeing, aiming to build language models that support people by combining methods from natural language processing (NLP) and human-computer interaction (HCI). 
 
 Specific topics include:
 

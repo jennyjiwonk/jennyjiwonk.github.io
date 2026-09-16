@@ -263,8 +263,16 @@ html[data-theme-setting="light"] {
 /******************************************************************************
  * Publication venue/date line (added)
  * Colors the "<venue>, <year>" line (e.g. "EMNLP, 2026") in each publication
- * entry with the theme's navy blue accent color.
+ * entry with the theme's navy blue accent color. The venue name itself is
+ * wrapped in <em> by _layouts/bib.liquid, and _typography.scss's generic
+ * `em { color: var(--global-text-color); }` rule otherwise wins over the
+ * inherited color from .periodical (an element rule always beats inheritance,
+ * regardless of the ancestor's specificity) — so the <em> needs its own rule too.
  ******************************************************************************/
 .periodical {
   color: var(--global-theme-color);
+
+  em {
+    color: var(--global-theme-color);
+  }
 }
