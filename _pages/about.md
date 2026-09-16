@@ -33,7 +33,7 @@ My research focuses on AI for mental health counseling and therapy, aiming to bu
 
 Specific topics include:
 
-* Aligning language models with expert therapeutic knowledge and real-world human experience
+* Aligning language models with expert therapeutic knowledge
 * Evaluating and improving the safety of AI in mental health conversations
 * Understanding how people perceive and engage with AI in mental health contexts
 
