@@ -358,8 +358,10 @@ display_categories: ["external-services"] # these categories will be displayed o
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  # last_name: [Einstein] # commented out: demo placeholder, replaced with your name below
+  # first_name: [Albert, A.] # commented out: demo placeholder, replaced with your name below
+  last_name: [Kim]
+  first_name: [Jiwon, J.]
 
   style: apa
   locale: en

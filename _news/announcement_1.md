@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started my Ph.D. in Computer Science at [UIUC](https://illinois.edu/). 🎓
+🎓 Started my Ph.D. in Computer Science at [UIUC](https://illinois.edu/).

@@ -2,11 +2,14 @@
 ---
 {% comment %}
   LOCAL OVERRIDE of al_folio_core's _layouts/bib.liquid.
-  Change: added a "Paper" button as the last button in each entry's link row,
+  Change 1: added a "Paper" button as the last button in each entry's link row,
   linking to entry.url (every entry in _bibliography/papers.bib already has a
   url pointing at its arXiv abstract page). None of the built-in link fields
   (doi/arxiv/hal/html/pdf/...) matched a plain `url` field, so no button was
-  rendering for these entries at all. See
+  rendering for these entries at all.
+  Change 2: the site owner's own name in the author list is now bolded
+  (<strong>) instead of italicized (<em>). Self-detection itself is unchanged —
+  it's driven by site.scholar.last_name/first_name in _config.yml. See
   docs/ARCHITECTURE.md#local-overrides-your-site-vs-this-repo. Run
   `bundle exec al-folio upgrade overrides diff _layouts/bib.liquid` after
   upgrading al_folio_core to check for upstream drift.
@@ -112,10 +115,12 @@
           {%- if forloop.last and author_array_limit == author_array_size %}and {% endif -%}
         {% endif %}
         {%- if author_is_self -%}
-          <em>
+          <!-- <em> --> <!-- commented out: self-author was italicized, now bolded instead -->
+          <strong>
             {{- author.first }}
             {{ author_last_html -}}
-          </em>
+          </strong>
+          <!-- </em> -->
         {%- else -%}
           {%- if coauthor_url -%}
             <a href="{{ coauthor_url }}">

@@ -5,7 +5,7 @@ inline: true
 related_posts: false
 ---
 
-Very excited to attend ICWSM 2026! I will be presenting two of our papers at the Digital Minds Workshop: our work on [AI content moderation in therapy conversations](https://workshop-proceedings.icwsm.org/abstract.php?id=2026_22) and [PAIR-SAFE](https://arxiv.org/abs/2601.12754).
+Very excited to attend ICWSM 2026! I will be presenting our work on [AI content moderation in therapy conversations](https://workshop-proceedings.icwsm.org/abstract.php?id=2026_22) and [PAIR-SAFE](https://arxiv.org/abs/2601.12754) at the Digital Minds Workshop.
 
 <!--
   Old demo boilerplate, kept for reference (not deleted). This used to sit BEFORE the
