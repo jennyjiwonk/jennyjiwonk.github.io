@@ -7,6 +7,8 @@
  *           lines below each replacement.
  * Change 2: added `.profile-social-icons` styling for the email/CV/Scholar/
  *           LinkedIn icon row on the about page (see _layouts/about.liquid).
+ * Change 3: added tighter letter-spacing for `.navbar-brand.title` (the site
+ *           name in the top bar).
  * See docs/ARCHITECTURE.md#local-overrides-your-site-vs-this-repo. Run
  * `bundle exec al-folio upgrade overrides diff _sass/_themes.scss` after
  * upgrading al_folio_core to check for upstream drift.
@@ -239,4 +241,12 @@ html[data-theme-setting="light"] {
       color: var(--global-hover-color);
     }
   }
+}
+
+/******************************************************************************
+ * Navbar title (added)
+ * Tighter letter-spacing on the site name in the top bar.
+ ******************************************************************************/
+.navbar-brand.title {
+  letter-spacing: -0.02em;
 }

@@ -2,7 +2,8 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Jenny Jiwon Kim # the website title (if blank, full name will be used instead)
+# title: Jenny Jiwon Kim # commented out: "blank" below builds the title from first/middle/last name instead, which also bolds first_name automatically
+title: blank
 first_name: Jenny
 middle_name: Jiwon
 last_name: Kim
@@ -11,9 +12,6 @@ contact_note: >
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Hi, I'm a PhD student researching AI for mental health counseling and therapy, at the intersection of NLP and HCI.
 footer_text: >
-  # Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  # Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  # Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: Jenny Jiwon Kim, Jiwon Kim, Jenny Kim, NLP, HCI, AI for mental health, language models, counseling, therapy
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🪩 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -97,14 +95,15 @@ al_folio:
 
 navbar_fixed: true
 footer_fixed: true
-search_enabled: true
+# search_enabled: true # commented out: search button removed from the top bar
+search_enabled: false
 socials_in_search: true
 posts_in_search: true
 bib_search: true
 
 # Dimensions
 # max_width: 930px # commented out: default width, replaced with a narrower layout below
-max_width: 750px
+max_width: 800px
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
