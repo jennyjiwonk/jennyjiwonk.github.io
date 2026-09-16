@@ -104,7 +104,7 @@ bib_search: true
 
 # Dimensions
 # max_width: 930px # commented out: default width, replaced with a narrower layout below
-max_width: 800px
+max_width: 850px
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
