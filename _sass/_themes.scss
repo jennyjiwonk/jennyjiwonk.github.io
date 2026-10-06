@@ -297,8 +297,11 @@ html[data-theme-setting="light"] {
   z-index: 2;
   pointer-events: none;
 
+  // Reuses the same color pairing as the venue-abbreviation badge in this same
+  // thumbnail column (.abbr abbr in the gem's _publications.scss), for visual
+  // consistency with that existing tag.
   background-color: var(--global-theme-color);
-  color: var(--global-hover-text-color);
+  color: var(--global-card-bg-color) !important;
   font-size: 0.65rem;
   font-weight: 700;
   text-transform: uppercase;
