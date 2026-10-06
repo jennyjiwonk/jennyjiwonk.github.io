@@ -14,6 +14,9 @@
  *           sun while in dark mode) instead of the current mode.
  * Change 5: colored `.periodical` (the "<venue>, <year>" line on each
  *           publication entry) with the theme's accent color.
+ * Change 6: added `.preview-wrapper` / `.preview-tag` styling for the "Oral"
+ *           badge overlaid on publication preview thumbnails (see
+ *           _layouts/bib.liquid).
  * See docs/ARCHITECTURE.md#local-overrides-your-site-vs-this-repo. Run
  * `bundle exec al-folio upgrade overrides diff _sass/_themes.scss` after
  * upgrading al_folio_core to check for upstream drift.
@@ -275,4 +278,31 @@ html[data-theme-setting="light"] {
   em {
     color: var(--global-theme-color);
   }
+}
+
+/******************************************************************************
+ * Publication preview "Oral" tag (added)
+ * Small badge overlaid on top of the preview thumbnail (see .preview-wrapper
+ * in _layouts/bib.liquid), shown when a bib entry has `oral = {true}`.
+ ******************************************************************************/
+.preview-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.preview-tag {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  z-index: 2;
+  pointer-events: none;
+
+  background-color: var(--global-theme-color);
+  color: var(--global-hover-text-color);
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 2px 6px;
+  border-radius: 3px;
 }
